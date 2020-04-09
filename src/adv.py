@@ -67,6 +67,7 @@ userInput = input("""   ------- RULES -------
 while userInput != "q":
     if userInput == "n":
         if room[player.current_room].n_to == None:
+            # if theres no room to the north
             print("No room exists to the North")
         else:
             player.current_room = room[player.current_room].n_to
@@ -76,6 +77,7 @@ while userInput != "q":
             print("Guide: " + room[player.current_room].description)
     elif userInput == "s":
         if room[player.current_room].s_to == None:
+            # if theres no room to the south
             print("No room exists to the South")
         else:
             player.current_room = room[player.current_room].s_to
@@ -85,6 +87,7 @@ while userInput != "q":
             print("Guide: " + room[player.current_room].description)
     elif userInput == "e":
         if room[player.current_room].e_to == None:
+            # if theres no room to the east
             print("No room exists to the East")
         else:
             player.current_room = room[player.current_room].e_to
@@ -94,6 +97,7 @@ while userInput != "q":
             print("Guide: " + room[player.current_room].description)
     elif userInput == "w":
         if room[player.current_room].w_to == None:
+            # if theres no room to the west
             print("No room exists to the West")
         else:
             player.current_room = room[player.current_room].w_to
